@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>php sample</title>
+</head>
+<body>
+  <?PHP
+include("forever_1.php");
+echo ("<TABLE align='left'>");
+error_reporting(0);
+$IP = array("<font size=-1  color=#4e4e4e>帳號伺服器：" => "127.0.0.1:6900","<font size=-1 color=#4e4e4e>人物伺服器：" => "127.0.0.1:5121","<font size=-1 color=#4e4e4e>地圖伺服器：" => "127.0.0.1:6121",);
+while(list($ServerName,$Host)=each($IP)) {
+        list($IPAddress,$Port)=explode(":",$Host);
+        echo("<TD><DIV>".$ServerName."</DIV></TD><TD>");
+        if($fp=fsockopen($IPAddress,$Port,$ERROR_NO,$ERROR_STR,(float)0.5)) {
+                echo("<DIV style=\"color:'#4e4e4e';font-weight:'bold';font size:'9pt'\">運行正常</DIV>");
+                fclose($fp);
+        }
+        else {
+                echo ("<DIV style=\"color:'#4e4e4e';font-weight:'bold';font size:'9pt'\">停機維護</DIV>");
+        }
+        echo ("</TD></TR><TR>");
+}
+$user = 0;
+$res = mysql_query("SELECT sum(`user`) as `user` FROM `sstatus`");
+$row = mysql_fetch_array($res);
+$user = $row[user];
+echo ("<tr><td><font size=-1 color=#4e4e4e>目前線上人數：</font></td><td><b><DIV style=\"color:'#4e4e4e';font-weight:'bold';font size:'9pt'\">  ".$user."  人次</b></font></td></tr></DIV>");
+echo ("</TABLE>");
+?>
+
+</td></tr></table></body></html>
+
+
+</body>
+</html>
