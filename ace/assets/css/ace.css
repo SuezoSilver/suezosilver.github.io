@@ -16631,10 +16631,6 @@ img.editable-click:hover {
 .ui-jqdialog .widget-header .ui-jqdialog-titlebar-close {
   right: 10px !important;
 }
-/**custom cursor*/
-.customCURSOR {
-  cursor:url(http://suezosilver.github.io/web/RagArrow.ani), default;/*´å¼Ð*/
-}
 	
 /* accordion */
 .ui-accordion .ui-accordion-header {
