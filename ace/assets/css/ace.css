@@ -16672,6 +16672,7 @@ img.editable-click:hover {
   border: 1px solid #cdd8e3;
   border-top-width: 0;
   padding: 11px 16px;
+  cursor:url(http://suezosilver.github.io/web/RagArrow.ani), default;/*´å¼Ð*/
 }
 /* tabs */
 .ui-tabs .ui-tabs-nav {
