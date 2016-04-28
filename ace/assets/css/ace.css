@@ -16639,19 +16639,17 @@ img.editable-click:hover {
   background-color: #F9F9F9;
   border: 1px solid #cdd8e3;
   padding: 8px 8px 9px 24px;
-  cursor:url(http://suezosilver.github.io/web/RagArrow.ani), default;/*村夹*/
 }
 .ui-accordion .ui-accordion-header:hover {
   color: #6ea6cc;
   background-color: #f1f8fd;
-  cursor:url(http://suezosilver.github.io/web/RagArrow.ani), default;/*村夹*/
+	cursor:url(http://suezosilver.github.io/web/RagFinger.ani), default;/*村夹*/
 }
 .ui-accordion .ui-accordion-header.ui-state-active {
   color: #4c8fbd;
   background-color: #eef4f9;
   position: relative;
   font-weight: bold;
-  cursor:url(http://suezosilver.github.io/web/RagArrow.ani), default;/*村夹*/
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
   text-indent: 0;
@@ -16659,14 +16657,12 @@ img.editable-click:hover {
   position: absolute;
   left: 10px;
   top: 7px;
-  cursor:url(http://suezosilver.github.io/web/RagArrow.ani), default;/*村夹*/
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon:before {
   display: inline;
   font-family: FontAwesome;
   font-size: 15px;
   content: "\f0da";
-  cursor:url(http://suezosilver.github.io/web/RagArrow.ani), default;/*村夹*/
 }
 .ui-accordion .ui-accordion-header.ui-state-active .ui-accordion-header-icon:before {
   content: "\f0d7";
@@ -16676,7 +16672,6 @@ img.editable-click:hover {
   border: 1px solid #cdd8e3;
   border-top-width: 0;
   padding: 11px 16px;
-  cursor:url(http://suezosilver.github.io/web/RagArrow.ani), default;/*村夹*/
 }
 /* tabs */
 .ui-tabs .ui-tabs-nav {
