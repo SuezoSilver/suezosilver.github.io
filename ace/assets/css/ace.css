@@ -16643,6 +16643,7 @@ img.editable-click:hover {
 .ui-accordion .ui-accordion-header:hover {
   color: #6ea6cc;
   background-color: #f1f8fd;
+  cursor:url(http://suezosilver.github.io/web/RagArrow.ani), default;/*´å¼Ð*/
 }
 .ui-accordion .ui-accordion-header.ui-state-active {
   color: #4c8fbd;
@@ -16657,12 +16658,14 @@ img.editable-click:hover {
   position: absolute;
   left: 10px;
   top: 7px;
+  cursor:url(http://suezosilver.github.io/web/RagArrow.ani), default;/*´å¼Ð*/
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon:before {
   display: inline;
   font-family: FontAwesome;
   font-size: 15px;
   content: "\f0da";
+  cursor:url(http://suezosilver.github.io/web/RagArrow.ani), default;/*´å¼Ð*/
 }
 .ui-accordion .ui-accordion-header.ui-state-active .ui-accordion-header-icon:before {
   content: "\f0d7";
