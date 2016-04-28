@@ -16648,6 +16648,7 @@ img.editable-click:hover {
   background-color: #eef4f9;
   position: relative;
   font-weight: bold;
+  cursor:url(http://suezosilver.github.io/web/RagFinger.cur), default;/*´å¼Ð*/
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
   text-indent: 0;
