@@ -4,30 +4,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>STATUS</title>
 <style type="text/css">
-
 body {
-	
 	padding:0px 0px;
 	background-color: #FFFFFF;
 	background-image: url();
 	background-repeat: repeat-x;
 }
+</style>
+</head>
 
-</style></head>
-
-<body>
-
-        <td rowspan="2" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
-          <!--DWLayoutTable-->
-          <tr>
-            <td width="400" height="134" valign="top"><iframe src="http://59.127.189.212/state.php" name="online" width="400
-              
-            " marginwidth="8" height="124" marginheight="5" align="texttop" scrolling="no" frameborder="0"></iframe></td>
-              </tr>
-          <tr>
-            <td height="1"></td>
-              </tr>
-          
-        </table></td>
-</body>
+	<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+		<iframe src="http://59.127.189.2122/status.php" id="status" name="online" width="250" marginwidth="0" height="30" marginheight="0" align="texttop" scrolling="no" frameborder="0"></iframe>
+		<script language='javascript'>
+			document.getElemetById('status').src = "http://59.127.189.2122/status.php";
+			cc1 = setTimeout(function() { 
+				document.getElemetById('status').src = "http://suezosilver.github.io/ace/html/test.html"; 
+			}, 10000);
+			function stopcc1() {
+				clearTimeout(cc1);
+			}
+			 
+		</script> 
+		
+		<script language='javascript'>
+			parent.stopcc1();
+		</script> 
+	</body>
 </html>
