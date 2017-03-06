@@ -2,26 +2,72 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
 <title>STATUS</title>
+
 <style type="text/css">
 body {
 	padding:0px 0px;
 	background-color: #FFFFFF;
-	background-image: url();
-	background-repeat: repeat-x;
+	background-image: url(http://suezosilver.github.io/img/loadding.gif);
+	background-repeat: no-repeat;
+	background-position:8px 0px;
+	-moz-user-select : none;
+	-webkit-user-select: none;
 }
 </style>
-</head>
 
-	<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
-		<iframe src="http://59.127.189.2122/status.php" id="status" name="online" width="250" marginwidth="0" height="30" marginheight="0" align="texttop" scrolling="no" frameborder="0"></iframe>
-		<script language='javascript'>
-			
-			document.getElementById("status").onunload=function(){ 
-				document.getElemetById('status').src = "http://59.127.189.212/status.php";
-			}
-			 
-		</script> 
-		
+<script>
+$(function load(){
+        var ifr=$('<iframe/>', {
+            id:'status',
+            src:'http://59.127.189.212/status.php',
+            style:'display:none;width:250px;height:30px;margin:-8px 0px',
+            marginheight:'0px',
+            marginheight:'0px',
+            align:'texttop',
+            scrolling:'no',
+            frameborder:'no',
+            load:function(){
+                $(this).show();
+				$("body,html").css("background-image","none");
+                //alert('Loaded');
+            }
+        });
+        $('body').append(ifr);    
+});
+</script>
+
+<script type="text/javascript">
+function iEsc(){ return false; }
+function iRec(){ return true; }
+function DisableKeys() {
+	if(event.ctrlKey || event.shiftKey || event.altKey) {
+		window.event.returnValue=false;
+		iEsc();}
+	}
+	document.ondragstart=iEsc;
+	document.onkeydown=DisableKeys;
+	document.oncontextmenu=iEsc;
+	if (typeof document.onselectstart !="undefined")
+		document.onselectstart=iEsc;
+	else{
+		document.onmousedown=iEsc;
+		document.onmouseup=iRec;
+	}
+function DisableRightClick(qsyzDOTnet){
+	if (window.Event){
+		if (qsyzDOTnet.which == 2 || qsyzDOTnet.which == 3)
+			iEsc();
+	} else if (event.button == 2 || event.button == 3){
+				event.cancelBubble = true
+				event.returnValue = false;
+				iEsc();}
+	}
+</script>
+
+</head>
+	<body onload="load()" scroll="no" oncontextmenu="javascript:return false">
 	</body>
 </html>
