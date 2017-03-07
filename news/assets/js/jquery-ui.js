@@ -968,6 +968,8 @@ var mouse = $.widget("ui.mouse", {
 		return true;
 	},
 
+	_mouseMove: function(event) {
+	},
 	/* ©ì°Ê start
 	_mouseMove: function(event) {
 		// Only check for mouseups outside the document if you've moved inside the document
