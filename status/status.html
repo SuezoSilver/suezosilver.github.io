@@ -25,7 +25,7 @@ body {
 </style>
 
 <script type="text/javascript">
-function load(){
+$(function load(){
         var ifr=$('<iframe/>', {
             id:'status',
             src:'http://59.127.189.212/status.php',
@@ -37,12 +37,12 @@ function load(){
             frameborder:'no',
             load:function(){
                 $(this).show();
-				//$("body,html").css("background-image","none");
+				$("body,html").css("background-image","none");
                 //alert('Loaded');
             }
         });
         $('body').append(ifr);    
-};
+});
 </script>
 
 <script type="text/javascript">
