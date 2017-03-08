@@ -25,7 +25,7 @@ body {
 </style>
 
 <script type="text/javascript">
-$(function load(){
+function load(){
         var ifr=$('<iframe/>', {
             id:'status',
             src:'http://59.127.189.212/status.php',
@@ -42,7 +42,7 @@ $(function load(){
             }
         });
         $('body').append(ifr);    
-});
+};
 </script>
 
 <script type="text/javascript">
