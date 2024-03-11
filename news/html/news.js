@@ -11,11 +11,11 @@ window.onload = function() {
 			var topNews = data.slice(0, 10);
 
 			// 遍历 JSON 数据中的每一条新闻
-			topNews.forEach((newsItem) => {
+			topNews.forEach(function(newsItem) {
 				var newsContainer = document.createElement('div');
 
 				// 对 newsItem.category 进行 switch-case 判断
-				let icon;
+				var icon;
 				switch (newsItem.category) {
 					case '綜合':
 						icon = 'info';
@@ -55,7 +55,7 @@ window.onload = function() {
 				$( "#accordion" ).accordion("refresh");
 			} else {
 				$( "#accordion" ).accordion({
-					collapsible: true ,
+					collapsible: true,
 					heightStyle: "content",
 					animate: 250,
 					header: ".accordion-header"
