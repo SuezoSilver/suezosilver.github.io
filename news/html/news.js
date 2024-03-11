@@ -1,6 +1,6 @@
 window.onload = function() {
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', './news.json');
+	xhr.open('GET', './news.json?nocache=' + new Date().getTime());
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState === 4 &&  xhr.status === 200) {
 			var data = JSON.parse(xhr.responseText);
