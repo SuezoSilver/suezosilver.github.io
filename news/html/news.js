@@ -13,7 +13,7 @@ window.onload = function() {
 			// 遍历 JSON 数据中的每一条新闻
 			topNews.forEach(function(newsItem) {
 				var newsContainer = document.createElement('div');
-
+				
 				// 对 newsItem.category 进行 switch-case 判断
 				var icon;
 				switch (newsItem.category) {
@@ -35,21 +35,20 @@ window.onload = function() {
 					default:
 						icon = 'other';
 				}
-
+				
 				// 设置新闻容器内容
-				newsContainer.innerHTML = `
-					<h3 class="accordion-header"><span class="label label-${icon} label-white middle">${newsItem.category}</span> ${newsItem.title}</h3>
-					<div>
-						<p>
-							${newsItem.content}
-						</p>
-					</div>
-				`;
+				newsContainer.innerHTML = 
+					'<h3 class="accordion-header"><span class="label label-' + icon +  ' label-white middle">' + newsItem.category + '</span> ' + newsItem.title + '</h3>' +
+					'<div>' +
+					'   <p>' +
+						newsItem.content +
+					'   </p>' +
+					'</div>';
 
 				// 添加新闻容器到 accordion
 				accordion.appendChild(newsContainer);
 			});
-
+			
 			// 更新或执行'accordion'
 			if($.isFunction($.fn.accordion)){
 				$( "#accordion" ).accordion("refresh");
