@@ -8,7 +8,7 @@ window.onload = function() {
 			var accordion = document.getElementById('accordion');
 
 			// 只选取前10条新闻
-			var topNews = data.slice(0, 5);
+			var topNews = data.slice(0, 10);
 
 			// 遍历 JSON 数据中的每一条新闻
 			topNews.forEach(function(newsItem) {
