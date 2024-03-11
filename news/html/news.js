@@ -1,5 +1,5 @@
 window.onload = function() {
-    fetch('/news/html/news.json') // 修改为你的 JSON 数据源
+    fetch('https://suezosilver.github.io/news/html/news.json') // 修改为你的 JSON 数据源
     .then(response => response.json())
     .then(data => {
         var accordion = document.getElementById('accordion');
