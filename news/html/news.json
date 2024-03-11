@@ -1,5 +1,10 @@
 [
   {
+	"category": "更新",
+	"title": "2024/03/11(一)更新項目",
+	"content": "新聞內容1<br>測試"
+  },
+  {
 	"category": "其他",
 	"title": "17:25分緩存",
 	"content": "測試。"
@@ -27,7 +32,6 @@
   {
 	"category": "維護",
 	"title": "2024/03/10(日) 例行性維護通知",
-	"icon": "warning",
 	"content": "test"
   },
   {
@@ -38,7 +42,6 @@
   {
 	"category": "更新",
 	"title": "2024/03/10(日)更新項目",
-	"icon": "warning",
 	"content": "新聞內容1<br>測試"
   },
   {
