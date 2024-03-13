@@ -42,7 +42,7 @@ window.onload = function() {
 					'<span class="label label-' + icon +  ' label-white middle">' + newsItem.category + '</span> ' + newsItem.title + 
 					'</h3>' +
 					'<div>' +
-					'   <p style="letter-spacing: 0.05em;">>' +
+					'   <p style="letter-spacing: 0.05em;">' +
 						newsItem.content +
 					'   </p>' +
 					'</div>';
