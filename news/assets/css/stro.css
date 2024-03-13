@@ -1248,6 +1248,17 @@ body {
 		margin-right: 0!important
 	}
 }
+.label.label-white {color:#879da9;border:1px solid #abbac3;background-color:#f2f5f6;border-right-width:1px;border-left-width:2px;}
+.label-white.label-success {color:#7b9e6c;border-color:#9fbf92;background-color:#edf3ea;}
+.label-white.label-warning {color:#d9993e;border-color:#e4ae62;background-color:#fef6eb;}
+.label-white.label-primary {color:#6688a6;border-color:#8aafce;background-color:#eaf2f8;}
+.label-white.label-danger {color:#bd7f75;border-color:#d28679;background-color:#fcf4f2;}
+.label-white.label-info {color:#4e7a8f;border-color:#7aa1b4;background-color:#eaf3f7;}
+.label-white.label-inverse {color:#404040;border-color:#737373;background-color:#ededed;}
+.label-white.label-pink {color:#af6f87;border-color:#d299ae;background-color:#fbeff4;}
+.label-white.label-purple {color:#7d6fa2;border-color:#b7b1c6;background-color:#efedf5;}
+.label-white.label-yellow {color:#cfa114;border-color:#ecd181;background-color:#fdf7e4;}
+.label-white.label-grey {color:#878787;border-color:#cecece;background-color:#ededed;}
 * {
 	cursor: url(../web/RagArrow.cur)
 }
