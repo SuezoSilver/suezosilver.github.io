@@ -39,7 +39,7 @@ window.onload = function() {
 				// 设置新闻容器内容
 				newsContainer.innerHTML = 
 					'<h3 class="accordion-header">' +
-					'<span class="label label-' + icon +  ' label-white middle">' + newsItem.category + '</span> ' + newsItem.title' +
+					'<span class="label label-' + icon +  ' label-white middle">' + newsItem.category + '</span> ' + newsItem.title +
 					(newsItem.date ? '<span class="no-click" style="float: right; margin-right: 15px; opacity: 0.8;">' + newsItem.date + '</span>' : '') + 
 					'</h3>' +
 					'<div>' +
