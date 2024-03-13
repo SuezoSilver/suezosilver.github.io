@@ -38,7 +38,7 @@ window.onload = function() {
 				
 				// 设置新闻容器内容
 				newsContainer.innerHTML = 
-					'<h3 class="accordion-header" style="letter-spacing: 0.1em;">' +
+					'<h3 class="accordion-header" style="letter-spacing: 0.05em;">' +
 					'<span class="label label-' + icon +  ' label-white middle">' + newsItem.category + '</span> ' + newsItem.title + 
 					'</h3>' +
 					'<div>' +
