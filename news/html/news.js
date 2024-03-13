@@ -40,7 +40,7 @@ window.onload = function() {
 				newsContainer.innerHTML = 
 					'<h3 class="accordion-header">' +
 					'<span class="label label-' + icon +  ' label-white middle">' + newsItem.category + '</span> ' + newsItem.title +
-					(newsItem.date ? '<span style="display: flex; justify-content: center; color: #888; opacity: 0.5; user-select: none;">' + newsItem.date + '</span>' : '') + 
+					(newsItem.date ? '<span style="color: #888; opacity: 0.5; user-select: none; margin-right: 10px;">' + newsItem.date + '</span>' : '') + 
 					'</h3>' +
 					'<div>' +
 					'   <p>' +
